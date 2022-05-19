@@ -14,7 +14,7 @@ import numpy
 from sklearn import metrics
 from time import strftime, localtime
 
-from transformers import BertModel
+from transformers.modeling_bert import BertModel, BertForMaskedLM
 
 import torch
 import torch.nn as nn
@@ -252,7 +252,7 @@ def main():
             'train': './datasets/semeval14/Laptops_Train.xml.seg',
             'test': './datasets/semeval14/Laptops_Test_Gold.xml.seg'
         },
-        'fix': {
+        'fixed': {
             'train': '../input/nycu-nlp110/fixed_train.csv',
             'test': '../input/nycu-nlp110/fixed_test.csv'
         }
