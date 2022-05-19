@@ -183,7 +183,7 @@ def main():
     # Hyper Parameters
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', default='bert_spc', type=str)
-    parser.add_argument('--dataset', default='laptop', type=str, help='twitter, restaurant, laptop, fix')
+    parser.add_argument('--dataset', default='laptop', type=str, help='twitter, restaurant, laptop, fixed')
     parser.add_argument('--optimizer', default='adam', type=str)
     parser.add_argument('--initializer', default='xavier_uniform_', type=str)
     parser.add_argument('--lr', default=2e-5, type=float, help='try 5e-5, 2e-5 for BERT, 1e-3 for others')
