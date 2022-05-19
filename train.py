@@ -252,9 +252,9 @@ def main():
             'train': './datasets/semeval14/Laptops_Train.xml.seg',
             'test': './datasets/semeval14/Laptops_Test_Gold.xml.seg'
         },
-        'fixeed': {
+        'fixed': {
             'train': '../input/nycu-nlp110/fixed_train.csv',
-            'test': '../input/nycu-nlp110/fixed_test.csv'
+            'test': '../input/nycu-nlp110/fixed_test.csv',
         }
     }
     input_colses = {
