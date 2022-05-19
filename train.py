@@ -14,7 +14,7 @@ import numpy
 from sklearn import metrics
 from time import strftime, localtime
 
-from transformers.models.bert.modeling_bert import BertModel,BertForMaskedLM
+from transformers import BertModel
 
 import torch
 import torch.nn as nn
