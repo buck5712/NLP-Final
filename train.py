@@ -245,7 +245,7 @@ def main():
             'test': './datasets/acl-14-short-data/test.raw'
         },
         'restaurant': {
-            'train':'./NLP-Final/datasets/semeval14/Restaurants_Train.xml.seg'
+            'train':'./NLP-Final/datasets/semeval14/Restaurants_Train.xml.seg',
             'test':'./NLP-Final/datasets/semeval14/Restaurants_Test_Gold.xml.seg'
             #'train': './datasets/semeval14/Restaurants_Train.xml.seg',
             #'test': './datasets/semeval14/Restaurants_Test_Gold.xml.seg'
