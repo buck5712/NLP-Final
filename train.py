@@ -183,7 +183,7 @@ def main():
     # Hyper Parameters
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', default='bert_spc', type=str)
-    parser.add_argument('--dataset', default='laptop', type=str, help='twitter, restaurant, laptop, fixed')
+    parser.add_argument('--dataset', default='laptop', type=str, help='twitter, restaurant, laptop')
     parser.add_argument('--optimizer', default='adam', type=str)
     parser.add_argument('--initializer', default='xavier_uniform_', type=str)
     parser.add_argument('--lr', default=2e-5, type=float, help='try 5e-5, 2e-5 for BERT, 1e-3 for others')
@@ -251,10 +251,6 @@ def main():
         'laptop': {
             'train': './datasets/semeval14/Laptops_Train.xml.seg',
             'test': './datasets/semeval14/Laptops_Test_Gold.xml.seg'
-        },
-        'fixed': {
-            'train': '../input/nlp-class-fixed-data/fixed_train.csv',
-            'test': '../input/nlp-class-fixed-data/fixed_test.csv'
         }
     }
     input_colses = {
